@@ -7,5 +7,9 @@
     "database": "idea",
     "entities": ["dist/**/*.entity{.ts,.js}"],
     "logging": true,
-    "synchronize": true
+    "synchronize": false,
+    "migrations": ["dist/db/migrations/*.js"],
+    "cli": {
+        "migrationsDir": "src/db/migrations"
+    }
   }
